@@ -8,9 +8,9 @@
  *
  * @author Kacper Rowinski <krowinski@implix.com>
  * http://implix.com
- * Modified to work with monero-rpc wallet by Serhack and cryptochangements
+ * Modified to work with sikka-rpc wallet by Serhack and cryptochangements
  */
-class Monero_Library
+class Sikka_Library
 {
     protected $url = null, $is_debug = false, $parameters_structure = 'array';
     protected $curl_options = array(
@@ -222,7 +222,7 @@ class Monero_Library
     }
 
     /* 
-     * The following functions can all be called to interact with the monero rpc wallet
+     * The following functions can all be called to interact with the sikka rpc wallet
      * They will majority of them will return the result as an array
      * Example: $daemon->address(); where $daemon is an instance of this class, will return the wallet address as string within an array
      */
