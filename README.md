@@ -6,7 +6,7 @@ This plugin is rather simple but there are a few things that need to be set up b
 
 * A web server! Ideally with the most recent versions of PHP and mysql
 
-* The Sikka wallet-cli and Sikka wallet-rpc tools found [here](https://getsikka.org/downloads/)
+* The Sikka simplewallet and Sikka walletd tools found [here](http://getsikka.org/)
 
 * [WordPress](https://wordpress.org)
 Wordpress is the backend tool that is needed to use WooCommerce and this Sikka plugin
@@ -32,11 +32,11 @@ To do this: start the sikka daemon on your server and leave it running in the ba
 ### Option 2: Connecting to a remote node
 Not Currently Available. 
 
-## Step 3: Setup your  sikka wallet-rpc
+## Step 3: Setup your  sikka walletd
 
-* Setup a sikka wallet using the sikka-wallet-cli tool.
+* Setup a sikka wallet using the simplewallet tool.
 
-* Start the Wallet RPC and leave it running in the background. This can be accomplished by running `./sikka-wallet-rpc --rpc-bind-port 18082 --rpc-login username:password --log-level 2 --wallet-file /path/walletfile` where "username:password" is the username and password that you want to use, seperated by a colon and  "/path/walletfile" is your actual wallet file. If you wish to use a remote node you can add the `--daemon-address` flag followed by the address of the node. `--daemon-address node.sikkaworld.com:18089` for example.
+* Start the Wallet RPC and leave it running in the background. This can be accomplished by running `./walletd --rpc-bind-port 18082 --rpc-login username:password --log-level 2 --wallet-file /path/walletfile` where "username:password" is the username and password that you want to use, seperated by a colon and  "/path/walletfile" is your actual wallet file. If you wish to use a remote node you can add the `--daemon-address` flag followed by the address of the node. `--daemon-address node.getsikka.org:18089` for example.
 
 ## Step 4: Setup Sikka Gateway in WooCommerce
 
@@ -59,7 +59,7 @@ Not Currently Available.
 * Click on "Save changes"
 
 ## Info on server authentication
-It is reccommended that you specify a username/password with your wallet rpc. This can be done by starting your wallet rpc with `sikka-wallet-rpc --rpc-bind-port 18082 --rpc-login username:password --wallet-file /path/walletfile` where "username:password" is the username and password that you want to use, seperated by a colon. Alternatively, you can use the `--restricted-rpc` flag with the wallet rpc like so `./sikka-wallet-rpc --testnet --rpc-bind-port 18082 --restricted-rpc --wallet-file wallet/path`.
+It is reccommended that you specify a username/password with your wallet rpc. This can be done by starting your wallet rpc with `walletd --rpc-bind-port 18082 --rpc-login username:password --wallet-file /path/walletfile` where "username:password" is the username and password that you want to use, seperated by a colon. Alternatively, you can use the `--restricted-rpc` flag with the wallet rpc like so `./walletd --testnet --rpc-bind-port 18082 --restricted-rpc --wallet-file wallet/path`.
 
 ## Donating Me
 XMR Address   : `41kGrwzD9jzTgdRJbGZ3YbGBTJezqWYD1AGyRgBQkTmcXkyJoGABQ1V5ra1vxiQmd4Hk3dsuxbvqKR3sJqN9YN8y7v3oVWr`
