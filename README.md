@@ -36,7 +36,7 @@ Not Currently Available.
 
 * Setup a sikka wallet using the simplewallet tool.
 
-* Start the Wallet RPC and leave it running in the background. This can be accomplished by running `./walletd --rpc-bind-port 18082 --rpc-login username:password --log-level 2 --wallet-file /path/walletfile` where "username:password" is the username and password that you want to use, seperated by a colon and  "/path/walletfile" is your actual wallet file. If you wish to use a remote node you can add the `--daemon-address` flag followed by the address of the node. `--daemon-address 127.0.0.1:18089` for example.
+* Start the Wallet RPC and leave it running in the background. This can be accomplished by running `./walletd --bind-port 18082 --log-level 2 --wallet-file /path/walletfile` where "/path/walletfile" is your actual wallet file. If you wish to use a remote node you can add the `--daemon-address` flag followed by the address of the node.
 
 ## Step 4: Setup Sikka Gateway in WooCommerce
 
@@ -62,5 +62,5 @@ Not Currently Available.
 It is reccommended that you specify a username/password with your wallet rpc. This can be done by starting your wallet rpc with `walletd --rpc-bind-port 18082 --rpc-login username:password --wallet-file /path/walletfile` where "username:password" is the username and password that you want to use, seperated by a colon. Alternatively, you can use the `--restricted-rpc` flag with the wallet rpc like so `./walletd --testnet --rpc-bind-port 18082 --restricted-rpc --wallet-file wallet/path`.
 
 ## Donating Me
-XMR Address   : `41kGrwzD9jzTgdRJbGZ3YbGBTJezqWYD1AGyRgBQkTmcXkyJoGABQ1V5ra1vxiQmd4Hk3dsuxbvqKR3sJqN9YN8y7v3oVWr`  
-Sikka Address : `39eYXNT9K4w2oJyP8VVfbtRErPqnudarPZFRqABCrwbSEAs7Ma64sosS1rn1bzLDK4ZWwUiHfyWCcUBG1iVWVXKYUut3xsm`
+XMR Address   : `41kGrwzD9jzTgdRJbGZ3YbGBTJezqWYD1AGyRgBQkTmcXkyJoGABQ1V5ra1vxiQmd4Hk3dsuxbvqKR3sJqN9YN8y7v3oVWr`   
+Sikka Address : `39eYXNT9K4w2oJyP8VVfbtRErPqnudarPZFRqABCrwbSEAs7Ma64sosS1rn1bzLDK4ZWwUiHfyWCcUBG1iVWVXKYUut3xsm`  
