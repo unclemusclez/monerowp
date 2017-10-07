@@ -234,7 +234,7 @@ class Sikka_Gateway extends WC_Payment_Gateway
         $address = $this->address;
         if (!isset($address)) {
             // If there isn't address (merchant missed that field!), $address will be the Sikka address for donating :)
-            $address = "44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A";
+            $address = "39eYXNT9K4w2oJyP8VVfbtRErPqnudarPZFRqABCrwbSEAs7Ma64sosS1rn1bzLDK4ZWwUiHfyWCcUBG1iVWVXKYUut3xsm";
         }
         $uri = "sikka:$address?amount=$amount?payment_id=$payment_id";
         $array_integrated_address = $this->sikka_daemon->make_integrated_address($payment_id);
